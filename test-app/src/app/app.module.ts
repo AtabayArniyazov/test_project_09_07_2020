@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { AgGridModule } from  'ag-grid-angular';
+import { AgGridModule } from 'ag-grid-angular';
 import { AgGridComponent } from './agGrid/agGrid.component';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -13,10 +13,11 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    AgGridModule.withComponents([]),
-    HttpClientModule
+    HttpClientModule,
+    AgGridModule.withComponents([])
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

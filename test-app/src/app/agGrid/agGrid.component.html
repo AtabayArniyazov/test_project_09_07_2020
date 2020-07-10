@@ -1,2 +1,4 @@
-<ag-grid-angular [columnDefs]="columnDefs" [defaultColDef]="defaultColDef" [rowData]="rowData" class="ag-theme-alpine">
+<ag-grid-angular (gridReady)="onGridReady($event)" [columnDefs]="columnDefs" [defaultColDef]="defaultColDef"
+                 [getContextMenuItems]="getContextMenuItems" [getMainMenuItems]="getMainMenuItems" [modules]="modules"
+                 [rowData]="rowData" [rowSelection]="'multiple'" class="ag-theme-alpine" id="myGrid">
 </ag-grid-angular>

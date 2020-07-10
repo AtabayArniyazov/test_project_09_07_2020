@@ -1,9 +1,9 @@
-import { Image, VideoItem } from '../types';
+import { Image, VideoItem } from '../@types';
 
 export class VideoItemModel implements VideoItem {
   image: Image;
   publishedOn: Date;
-  title: {title: string, videoId: string};
+  title: { title: string, videoId: string };
   description: string;
   videoId: string;
 
@@ -11,7 +11,7 @@ export class VideoItemModel implements VideoItem {
     Object.assign(this, optionals);
   }
 
-  static fromJSON(json) {
+  static fromJSON(json): VideoItemModel {
     return new VideoItemModel({
       image: json.snippet.thumbnails.default,
       publishedOn: json.snippet.publishedAt,

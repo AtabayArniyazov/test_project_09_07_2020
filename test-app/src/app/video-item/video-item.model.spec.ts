@@ -1,4 +1,4 @@
-import { VideoItem } from '../types';
+import { VideoItem } from '../@types';
 
 describe('VideoItem', () => {
   it('should create an instance', () => {
