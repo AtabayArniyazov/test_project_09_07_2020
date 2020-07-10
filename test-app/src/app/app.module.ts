@@ -3,16 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { AgGridModule } from  'ag-grid-angular';
-import { HomeComponent } from './home/home.component';
+import { AgGridComponent } from './agGrid/agGrid.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    AgGridComponent
   ],
   imports: [
     BrowserModule,
-    AgGridModule.withComponents([])
+    AgGridModule.withComponents([]),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
